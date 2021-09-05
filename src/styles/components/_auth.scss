@@ -1,0 +1,76 @@
+.auth__main {
+  align-items: center;
+  background: red;
+  background: -webkit-linear-gradient(left top, $nord0, $nord12);
+  background: -o-linear-gradient(bottom right, $nord0, $nord12);
+  background: -moz-linear-gradient(bottom right, $nord0, $nord12);
+  background: linear-gradient(to bottom right, $nord0, $nord12);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.auth__box-container {
+  text-align: center;
+
+  h1 {
+    color: darken($color: $nord0, $amount: 7);
+    font-weight: 600;
+    font-size: 4rem;
+  }
+
+  .auth__input,
+  .auth__button {
+    height: 3rem;
+    width: 15rem;
+    display: block;
+    font-size: 18px;
+  }
+
+  .auth__input {
+    background-color: transparent;
+    border: 2px solid $nord0;
+    border-radius: 5px;
+    color: $nord0;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .auth__input::placeholder {
+    color: $nord1;
+    opacity: 1;
+  }
+
+  .auth__input:focus {
+    outline: none;
+  }
+
+  .auth__button {
+    margin: 25px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    background-color: $nord4;
+    color: $nord11;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.35s;
+  }
+
+  .auth__button:hover {
+    background: $nord11;
+    color: $nord6;
+  }
+
+  hr {
+    background-color: none;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: $nord0;
+    border-width: 10px;
+    width: 60px;
+  }
+}

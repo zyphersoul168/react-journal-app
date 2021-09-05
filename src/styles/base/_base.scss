@@ -2,13 +2,19 @@
 
 * {
   font-family: 'Mukta', sans-serif;
-  font-weight: 300;
-  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html, body {
+  margin: 0;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 main {
@@ -21,4 +27,16 @@ main {
 
 .mt-5 {
   margin-top: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 20px;
+}
+
+.pointer {
+  cursor: pointer;
 }
