@@ -1,0 +1,126 @@
+.journal__main-content {
+  display: flex;
+  background: red;
+  background: -webkit-linear-gradient(left top, $nord15, $nord4);
+  background: -o-linear-gradient(bottom right, $nord15, $nord4);
+  background: -moz-linear-gradient(bottom right, $nord15, $nord4);
+  background: linear-gradient(to bottom right, $nord15, $nord4);
+}
+
+.journal__sidebar {
+  background-color: transparentize($color: $nord0, $amount: 0.8);
+  border-radius: 10px;
+  color: $nord5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 5px;
+  padding: 0 10px;
+  width: 450px;
+}
+
+.journal__sidebar-navbar {
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    font-weight: 200;
+  }
+
+  .username {
+    padding-left: 6px;
+  }
+
+  .logout {
+    margin: auto 0;
+    color: $nord5;
+
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $nord12;
+    }
+  }
+}
+
+.journal__new-entry {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto 0;
+
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $nord15;
+  }
+}
+
+.journal__entries {
+  flex: 1 1 auto;
+  margin-top: 30px;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.journal__entry {
+  background-color: transparentize($color: $nord5, $amount: 0.6);
+  border-radius: 4px;
+  display: flex;
+  margin: 20px 5px;
+  overflow: hidden;
+
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: transparentize($color: $nord5, $amount: 0.3);
+  }
+  
+  h4 {
+    margin: 0;
+  }
+}
+
+.journal__entry-picture {
+  height: 7rem;
+  width: 7rem;
+}
+
+.journal__entry-body {
+  margin: 0 0 0 10px;
+  padding: 10px 0;
+  width: 10rem;
+}
+
+.journal__entry-title {
+  color: $nord0;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.journal__entry-content {
+  color: $nord1;
+  font-size: 12px;
+  margin: 0;
+}
+
+.journal__entry-date-box {
+  color: $nord0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+
+  span {
+    font-size: 12px;
+  }
+}

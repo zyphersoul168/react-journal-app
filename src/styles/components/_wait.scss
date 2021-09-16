@@ -1,0 +1,17 @@
+.wait__container {
+  display: flex;
+  background: -webkit-linear-gradient(left top, $nord1, $nord6);
+  background: -o-linear-gradient(bottom right, $nord1, $nord6);
+  background: -moz-linear-gradient(bottom right, $nord1, $nord6);
+  background: linear-gradient(to bottom right, $nord1, $nord6);
+  width: 100vw;
+  height: 100vh;
+
+  h1 {
+    color: $nord5;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    margin: auto;
+    font-size: 5rem;
+  }
+}
