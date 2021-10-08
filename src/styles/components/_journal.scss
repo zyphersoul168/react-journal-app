@@ -1,20 +1,21 @@
 .journal__main-content {
   display: flex;
-  background: red;
-  background: -webkit-linear-gradient(left top, $nord15, $nord4);
-  background: -o-linear-gradient(bottom right, $nord15, $nord4);
-  background: -moz-linear-gradient(bottom right, $nord15, $nord4);
-  background: linear-gradient(to bottom right, $nord15, $nord4);
+  background: darken($color: $nord0, $amount: 5);
+  // background: -webkit-linear-gradient(left top, $nord15, $nord4);
+  // background: -o-linear-gradient(bottom right, $nord15, $nord4);
+  // background: -moz-linear-gradient(bottom right, $nord15, $nord4);
+  // background: linear-gradient(to bottom right, $nord15, $nord4);
 }
 
 .journal__sidebar {
-  background-color: transparentize($color: $nord0, $amount: 0.8);
-  border-radius: 10px;
+  // background-color: transparentize($color: $nord0, $amount: 0.8);
+  background-color: $nord0;
+  // border-radius: 10px;
   color: $nord5;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: 5px;
+  // margin: 5px;
   padding: 0 10px;
   width: 450px;
 }
@@ -71,9 +72,10 @@
 }
 
 .journal__entry {
-  background-color: transparentize($color: $nord5, $amount: 0.6);
+  background-color: transparentize($color: $nord5, $amount: 0.4);
   border-radius: 4px;
   display: flex;
+  justify-content: space-between;
   margin: 20px 5px;
   overflow: hidden;
 

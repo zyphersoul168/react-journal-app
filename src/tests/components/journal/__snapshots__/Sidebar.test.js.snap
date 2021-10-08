@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on Sidebar component should match snapshot 1`] = `
+<aside
+  className="journal__sidebar"
+>
+  <div
+    className="journal__sidebar-navbar"
+  >
+    <h3
+      className="mt-5"
+    >
+      <i
+        className="far fa-user-circle"
+      />
+      <span
+        className="username"
+      >
+         aaron
+      </span>
+    </h3>
+    <button
+      className="btn logout"
+      onClick={[Function]}
+    >
+      <span>
+        Log out
+      </span>
+    </button>
+  </div>
+  <div
+    className="journal__new-entry"
+    onClick={[Function]}
+  >
+    <span>
+      <i
+        className="far fa-calendar-plus fa-5x"
+      />
+    </span>
+    <p
+      className="mt-5"
+    >
+      New entry
+    </p>
+  </div>
+  <div
+    className="journal__entries"
+  />
+</aside>
+`;

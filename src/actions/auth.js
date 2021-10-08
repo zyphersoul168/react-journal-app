@@ -11,24 +11,24 @@ import { types } from '../types/types';
 import { finishLoading, startLoading } from './ui';
 import Swal from 'sweetalert2';
 import { errors } from '../types/errors';
+import { cleanNotes } from './notes';
 
 const auth = getAuth();
 
 export const startLoginEmailPassword = (email, password) => {
-  return (dispatch) => {
+  return async (dispatch) => {
     dispatch(startLoading());
-    signInWithEmailAndPassword(auth, email, password)
-      .then(({ user }) => {
-        dispatch(login(user.uid, user.displayName));
-        dispatch(finishLoading());
-      })
-      .catch((error) => {
-        dispatch(finishLoading());
-        error.message === errors.userNotFound &&
-          Swal.fire('Error', 'User not found', 'error');
-        error.message === errors.wrongPassword &&
-          Swal.fire('Error', 'Wrong Password', 'error');
-      });
+    try {
+      const { user } = await signInWithEmailAndPassword(auth, email, password);
+      dispatch(login(user.uid, user.displayName));
+      dispatch(finishLoading());
+    } catch (error) {
+      dispatch(finishLoading());
+      error.message === errors.userNotFound &&
+        Swal.fire('Error', 'User not found', 'error');
+      error.message === errors.wrongPassword &&
+        Swal.fire('Error', 'Wrong Password', 'error');
+    }
   };
 };
 
@@ -67,6 +67,7 @@ export const startLogout = () => {
   return async (dispatch) => {
     await signOut(auth);
     dispatch(logout());
+    dispatch(cleanNotes());
   };
 };
 

@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on RegisterPage component should match snapshot 1`] = `
+<div>
+  <h1>
+    Sign up
+  </h1>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="on"
+      className="auth__input"
+      name="name"
+      onChange={[Function]}
+      placeholder="Name"
+      type="text"
+      value="aaron"
+    />
+    <input
+      autoComplete="off"
+      className="auth__input"
+      name="email"
+      onChange={[Function]}
+      placeholder="Email"
+      type="text"
+      value="ortiz@mail.com"
+    />
+    <input
+      className="auth__input"
+      name="password"
+      onChange={[Function]}
+      placeholder="Password"
+      type="password"
+      value="1234"
+    />
+    <input
+      autoComplete="off"
+      className="auth__input"
+      name="password2"
+      onChange={[Function]}
+      placeholder="Confirm password"
+      type="password"
+      value="1234"
+    />
+    <button
+      className="auth__button"
+    >
+      <span
+        className="auth__login"
+      >
+        Sign up
+      </span>
+    </button>
+    <hr />
+    <div>
+      <span>
+        Or you can sign up with:
+      </span>
+      <div
+        className="google-btn"
+      >
+        <div
+          className="google-icon-wrapper"
+        >
+          <img
+            alt="google button"
+            className="google-icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+          />
+        </div>
+        <p
+          className="btn-text"
+        >
+          <b>
+            Continue with google
+          </b>
+        </p>
+      </div>
+    </div>
+    <span>
+      Already have an account?
+       
+      <a
+        className="link"
+        href="/auth/login"
+        onClick={[Function]}
+      >
+        Log in
+      </a>
+    </span>
+  </form>
+</div>
+`;

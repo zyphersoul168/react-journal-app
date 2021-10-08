@@ -11,6 +11,18 @@
   }
 }
 
+.btn-danger {
+  border-radius: 4px;
+  color: $nord5;
+  margin: 0 10px;
+
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: $nord11;
+  }
+}
+
 .auth__button {
   margin: 25px 0;
   font-weight: 600;
